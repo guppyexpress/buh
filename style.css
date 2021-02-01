@@ -1,0 +1,13 @@
+body {
+    margin:0;
+    padding:0;
+    background:#FFFFF;
+}
+ 
+canvas {
+    display:block;
+
+  /* CSS style to hide cursor element */ 
+            .newClass { 
+                cursor: none; 
+            } 
