@@ -21,15 +21,15 @@ function GetRandomColor() {
 var Particle = function () {
     this.x = canvas.width * Math.random();
     this.y = canvas.height * Math.random();
-    this.vx = 200 * Math.random() - 100;//x axis
-    this.vy = 200 * Math.random() - 120;//y axis
+    this.vx = 100 * Math.random() - 50;//x axis
+    this.vy = 100 * Math.random() - 60;//y axis
     this.Color = GetRandomColor();
 }
 //Ading two methods
 Particle.prototype.Draw = function (ctx) {
     ctx.fillStyle = this.Color;
     //change fuzzy boi size
-    ctx.fillRect(this.x, this.y, 5, 7);
+    ctx.fillRect(this.x, this.y, 10, 10);
 }
 Particle.prototype.Update = function () {
     this.x += this.vx;
