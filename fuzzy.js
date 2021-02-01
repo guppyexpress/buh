@@ -29,7 +29,7 @@ var Particle = function () {
 Particle.prototype.Draw = function (ctx) {
     ctx.fillStyle = this.Color;
     //change fuzzy boi size
-    ctx.fillRect(this.x, this.y, 10, 10);
+    ctx.fillRect(this.x, this.y, 30, 30);
 }
 Particle.prototype.Update = function () {
     this.x += this.vx;
